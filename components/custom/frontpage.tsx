@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 const REFRESH_TIME = 35250 // refresh after 35.25s since last refresh
 
 
-export default function About() {
+export default function Frontpage() {
     const [reloadKey, setReloadKey] = useState(0);
     const intervalRef = useRef<number | null>(null);
 
@@ -44,7 +44,7 @@ export default function About() {
                     <p className='typewriter-3'>Recent Graduate of the</p>
                     <p className='typewriter-4'>University of Michigan.</p>
                     <p className='typewriter-5'>Scroll for More Info :)</p>
-                </div>
+                </div> 
             </div>
         </div>
         </>

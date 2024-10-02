@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import Head from "next/head";
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import { useTheme } from "next-themes";
 import localFont from "next/font/local";
 import Navbar from "@/components/custom/navbar-top";
 import Socials from "@/components/custom/socials"
