@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import Head from "next/head";
+import { ThemeProvider } from "@/components/ui/theme-provider";
+import { useTheme } from "next-themes";
 import localFont from "next/font/local";
+import Navbar from "@/components/custom/navbar-top";
+import Socials from "@/components/custom/socials"
+import { Inter } from 'next/font/google'; // Importing the font using Next.js font optimization
 import "./globals.css";
+
+const inter = Inter({ subsets: ['latin'] }); // Use the imported font
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,10 +33,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <head>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className}`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Navbar/>
+          <Socials />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
