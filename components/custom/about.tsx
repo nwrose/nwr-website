@@ -4,7 +4,7 @@ import { Separator } from "@radix-ui/react-separator"
 export default function About(){
     return(
         <>
-        <div className="h-screen flex flex-col items-center justify-start md:justify-around space-y-4 bg-secondary text-sm md:text-base lg:text-lg">
+        <div className="min-h-screen flex flex-col items-center justify-start md:justify-around space-y-4 bg-secondary text-sm md:text-base lg:text-lg">
             <div className="flex flex-col justify-around items-center w-[80%]">
                 <div className="flex flex-col items-center font-bold text-3xl md:text-4xl pt-[12%] md:pt-[8%]">
                     <h1>ABOUT ME</h1>
@@ -23,15 +23,16 @@ export default function About(){
                     </div>
                     <div className="px-4 pt-8 space-y-4">
                         <p className="">
-                            Hey y'all, I'm Nathan (Nate) Rosenberg. I'm just writing words 
-                            so that I know what it will look like when I have a whole 
-                            little paragraph here and not just a few words.
+                            Hey I'm Nathan (Nate) Rosenberg, software-engineer and recent graduate of 
+                            the University of Michigan. I'm passionate about technology, and enjoy
+                            allowing my curiosity to pull me in new directions. 
                         </p>
                         <p className="">
-                            I do all sorts of stuff where I work on the thing. Like right now
-                            where I'm working on the thing to display all of the things that
-                            I have had the pleasure of working on.
-                            I hope you enjoy my website, and feel free to reach out or whatever idk.
+                            I've done a good mix of back-end and front-end work, mostly focusing on 
+                            React JS & TS for front-end, and Python Flask, SQL (RDBMS), and AWS for backend.
+                            I also have significant experience with lower-level C++ programming, mostly in the form of school projects.
+                            I've done work in the classroom, worked on a team in a corporate environment, and 
+                            pursued personal projects that align with my interests.
                         </p>
                     </div>
                 </div>
@@ -40,7 +41,7 @@ export default function About(){
                         <h2>Skills</h2>
                         <div className="rounded border-2 border-violet-600 mt-4 md:mb-6 w-[40%]"/>
                     </div>
-                    <div className="flex flex-wrap h-[80%] font-semibold text-sm md:text-lg justify-start space-y-2 md:space-y-4 space-x-2 md:space-x-4 py-4">
+                    <div className="flex flex-wrap h-[80%] font-semibold text-sm md:text-lg justify-center space-y-2 md:space-y-4 space-x-2 md:space-x-4 py-4">
                         <div></div>
                         <div className="flex justify-around items-center bg-violetMode h-[30px] px-4 mx-2 rounded">C++</div>
                         <div className="flex justify-around items-center bg-violetMode h-[30px] px-4 mx-2 rounded">Python</div>
@@ -49,6 +50,8 @@ export default function About(){
                         <div className="flex justify-around items-center bg-violetMode h-[30px] px-4 mx-2 rounded">HTML</div>
                         <div className="flex justify-around items-center bg-violetMode h-[30px] px-4 mx-2 rounded">CSS</div>
                         <div className="flex justify-around items-center bg-violetMode h-[30px] px-4 mx-2 rounded">SQL</div>
+                        <div className="flex justify-around items-center bg-violetMode h-[30px] px-4 mx-2 rounded">Multithreading</div>
+                        <div className="flex justify-around items-center bg-violetMode h-[30px] px-4 mx-2 rounded">REST APIs</div>
                         <div className="flex justify-around items-center bg-violetMode h-[30px] px-4 mx-2 rounded">Bash</div>
                         <div className="flex justify-around items-center bg-violetMode h-[30px] px-4 mx-2 rounded">WSL</div>
                         <div className="flex justify-around items-center bg-violetMode h-[30px] px-4 mx-2 rounded">GitHub</div>

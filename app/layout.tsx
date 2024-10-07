@@ -39,6 +39,11 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} font-sans bg-secondary text-primary`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar/>
+          <div className='w-[5%] h-[10%] absolute pb-4 bottom-0 right-0 z-10'>
+            <div className=''>
+              AI Help
+            </div>
+          </div>
           {children}
         </ThemeProvider>
       </body>

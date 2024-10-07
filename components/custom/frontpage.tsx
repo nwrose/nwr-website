@@ -37,17 +37,19 @@ export default function Frontpage() {
         <div className='h-screen w-[100%] fontsize-20 text-4xl flex bg-secondary'>
             <div className="max-w-[5%] w-[5%] h-[100%] flex flex-col justify-around items-center">
                 <div className="space-y-1 shadow-md rounded cursor-hover-pixel bg-gray-100">
-                    <div className='hover:bg-violet-300 rounded'>
+                    <div/>
+                    <div className='hover:bg-violet-300 rounded m-2'>
                         <a href="https://www.linkedin.com/in/nathan-rosenberg-a6a151259/">
                             <Image src="linkedin-dark.svg" alt="linkedin" width={75} height={75}/>
                         </a>
                     </div>
                     <Separator/>
-                    <div className='hover:bg-violet-300 rounded'>
+                    <div className='hover:bg-violet-300 rounded m-2'>
                         <a href="https://www.github.com/nwrose/">
                             <Image src="github-dark.svg" alt="github" width={75} height={75}/>
                         </a>
                     </div>
+                    <div/>
                 </div>
             </div>
             <div className='h-screen w-[90%] flex items-center flex-col justify-between p-4 '>
@@ -65,9 +67,9 @@ export default function Frontpage() {
                         <p className='typewriter-5'>Lover of Vintage Stuff.</p>
                         <p className='typewriter-6'>Scroll for More Info :)</p>
                     </div>
-
                 </div>
             </div>
+
         </div>
     );
 }
