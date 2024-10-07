@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import localFont from "next/font/local";
 import Navbar from "@/components/custom/navbar-top";
-import Socials from "@/components/custom/socials"
 import { Inter } from 'next/font/google'; // Importing the font using Next.js font optimization
 import "./globals.css";
 
@@ -37,10 +36,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar/>
-          <Socials />
           {children}
         </ThemeProvider>
       </body>

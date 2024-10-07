@@ -37,7 +37,7 @@ export default function Navbar() {
 
     return (
         <>
-        <div className="fixed w-[100%] bg-orange-100 text-gray-800 font-extrabold z-50">
+        <div className="fixed w-[100%] bg-popover text-violet-800 font-extrabold shadow-md z-10">
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem/>
