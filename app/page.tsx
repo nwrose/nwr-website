@@ -1,6 +1,6 @@
 "use client"
 
-import Offline from "@/components/custom/offline"
+import Experience from "@/components/custom/experience"
 import Frontpage from "@/components/custom/frontpage"
 import About from "@/components/custom/about"
 
@@ -13,9 +13,7 @@ export default function Home() {
       </div>  
       <div className="snap-start">
         <About/>
-      </div>
-      <div className="snap-start">
-        <Offline/>
+        <Experience/>
       </div>
     </div>
     </>

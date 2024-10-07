@@ -36,7 +36,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} font-sans`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} font-sans bg-secondary text-primary`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar/>
           {children}
