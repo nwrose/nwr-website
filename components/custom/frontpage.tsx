@@ -52,7 +52,7 @@ export default function Frontpage() {
             </div>
             <div className='h-screen w-[90%] flex items-center flex-col justify-between p-4 '>
                 <div className='flex flex-col h-[80%] justify-around items-center w-full md:w-[60%] p-5 mb-4'>
-                    <div className='flex text-4xl md:text-6xl text-violet-800 font-semibold'>
+                    <div className='flex text-4xl md:text-6xl text-violet-800 font-extrabold'>
                         <p className=''> Hello, World!</p>
                         <span className="wave">👋</span>
                     </div>
