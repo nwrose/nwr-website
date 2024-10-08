@@ -2,7 +2,7 @@
 
 import Frontpage from "@/components/custom/frontpage"
 import About from "@/components/custom/about"
-import Experience from "@/components/custom/experience"
+import Projects from "@/components/custom/projects"
 import Contact from "@/components/custom/contact"
 
 
@@ -20,7 +20,7 @@ export default function Home() {
           <About/>
         </section>
         <section id="experience">
-          <Experience/>
+          <Projects/>
         </section>
         <section id="contact">
           <Contact/>

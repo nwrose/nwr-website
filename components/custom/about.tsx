@@ -23,19 +23,25 @@ export default function About(){
                         <p className="">
                             I've done a mix of back-end and front-end work, primarily focusing on 
                             React JS & TS for front-end, and Python Flask, SQL (RDBMS), and AWS for 
-                            backend. I also have significant experience with lower-level C/C++ programming, 
-                            mostly in the form of school projects.
+                            backend. Additionally, I've done a lot of classroom project work with C/C++
+                            and am comfortable in a multi-threaded environment, having designed and built
+                            a few fundamental operating system components.
+                        </p>    
+                        <p>
+                            In 2023 I interned for CVS Health where I gained exposure to 
+                            corporate-scale development. I had the opportunity to contribute to 
+                            ETL data pipelines and cloud infastructure, expanding my back-end 
+                            development capabilities.
                         </p>
                         <p>
-                            Through my experience interning for CVS Health I gained exposure to 
-                            corporate-scale development. I had the opportunity to contribute to 
-                            ETL data pipelines and cloud infastructure, expanding my back-end knowledge.
+                            Something more personal and like good closing maybe? idk ill get some feedback
+                            for this last paragraph
                         </p>
                     </div>
                 </div>
                 <div className="flex flex-col justify-around items-center  w-[80%] sm:w-[60%] md:w-[35%]">
                     <div className="flex flex-col items-center text-xl md:text-4xl font-semibold">
-                        <h2>Skills</h2>
+                        <h2>Core Skills</h2>
                         <div className="rounded border-2 border-violet-600 mt-4 md:mb-2 w-[40%]"/>
                     </div>
                     <div className="flex flex-wrap h-[80%] font-semibold text-sm md:text-lg justify-center space-y-2 md:space-y-4 space-x-2 md:space-x-4 py-4">
