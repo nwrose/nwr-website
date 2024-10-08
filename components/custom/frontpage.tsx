@@ -35,7 +35,7 @@ export default function Frontpage() {
 
     return(
         <div className='h-screen w-[100%] fontsize-20 text-4xl flex bg-secondary'>
-            <div className="max-w-[5%] w-[5%] h-[100%] flex flex-col justify-around items-center">
+            <div className="max-w-[5%] w-[5%] h-[100%] flex flex-col justify-around items-center -z-10 md:z-10">
                 <div className="space-y-1 shadow-md rounded cursor-hover-pixel bg-gray-100">
                     <div/>
                     <div className='hover:bg-violet-300 rounded m-2'>
@@ -59,7 +59,7 @@ export default function Frontpage() {
                         <span className="wave">👋</span>
                     </div>
                     <div key={reloadKey} className='relative w-[80%] min-w-[475px] h-[50%] bg-green-950 cursor-pixel border-t-4 border-l-4 border-b-4 border-r-4 border-gray-500 border-t-gray-300 border-l-gray-300 border-b-gray-600 border-r-gray-600 shadow-md'>
-                        <button id="refresh-button" className="absolute top-2 right-2 text-xl p-1 rounded cursor-hover-pixel" onClick={handleRefresh}>🔄</button>
+                        <button id="refresh-button" className="absolute right-1 bottom-1 lg:top-1 lg:bottom-auto text-2xl p-1 rounded cursor-hover-pixel" onClick={handleRefresh}>🔄</button>
                         <p className='typewriter'> I'm Nathan Rosenberg.</p>
                         <p className='typewriter-2'>Full-Stack Developer.</p>
                         <p className='typewriter-3'>Recent Graduate of the</p>
@@ -69,7 +69,6 @@ export default function Frontpage() {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }

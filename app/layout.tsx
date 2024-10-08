@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import localFont from "next/font/local";
 import Navbar from "@/components/custom/navbar-top";
+import AI from "@/components/custom/ai-helper";
 import { Inter } from 'next/font/google'; // Importing the font using Next.js font optimization
 import "./globals.css";
 
@@ -29,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
       <link
           href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
@@ -40,9 +41,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar/>
           <div className='w-[5%] h-[10%] absolute pb-4 bottom-0 right-0 z-10'>
-            <div className=''>
-              AI Help
-            </div>
+            <AI/>
           </div>
           {children}
         </ThemeProvider>

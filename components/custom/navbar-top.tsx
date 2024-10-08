@@ -27,7 +27,7 @@ import {useState, useEffect} from "react";
 
 export default function Navbar() {
     const [ mounted, setMounted ] = useState(false);
-    const { setTheme } = useTheme()
+    const { setTheme } = useTheme();
 
     useEffect(() => {
         setMounted(true)
@@ -37,34 +37,34 @@ export default function Navbar() {
 
     return (
         <>
-        <div className="fixed w-[100%] bg-popover text-violet-800 font-extrabold shadow-md z-10">
+        <div className="fixed w-[100%] bg-popover text-violet-800 font-extrabold shadow-md z-50">
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem/>
                     
                     <NavigationMenuItem>
-                        <Link href="/" legacyBehavior passHref>
+                        <Link href="#home" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             Home
                             </NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <Link href="/projects" legacyBehavior passHref>
+                        <Link href="#about" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Projects
+                            About
                             </NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <Link href="/offline" legacyBehavior passHref>
+                        <Link href="#experience" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Offline
+                            Experience
                             </NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <Link href="/contact" legacyBehavior passHref>
+                        <Link href="#contact" legacyBehavior passHref>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             Contact
                             </NavigationMenuLink>
