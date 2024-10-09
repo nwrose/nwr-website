@@ -9,13 +9,13 @@ import Contact from "@/components/custom/contact"
 export default function Home() {
   return (
     <>
-    <div className="relative h-screen snap-y snap-mandatory overflow-y-scroll">
-      <div className="snap-start">
+    <div className="relative h-screen sm:snap-y sm:snap-mandatory overflow-y-scroll">
+      <div className="sm:snap-start">
         <section id="home">
           <Frontpage/>
         </section>
-      </div>  
-      <div className="snap-start">
+      </div>
+      <div className="sm:snap-start">
         <section id="about" >
           <About/>
         </section>

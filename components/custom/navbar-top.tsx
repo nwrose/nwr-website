@@ -35,7 +35,7 @@ export default function Navbar() {
     return (
         <>
         <div className="fixed w-[100%] bg-popover sm:text-lg font-extrabold shadow-md z-50">
-            <NavigationMenu className="w-screen">
+            <NavigationMenu className="w-full">
                 <NavigationMenuList className="flex flex-row justify-center sm:justify-between w-screen">
                     <div className="hidden sm:block">
                         <NavigationMenuItem className="text-violet-800">

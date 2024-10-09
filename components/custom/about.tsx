@@ -36,7 +36,7 @@ export default function About(){
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col justify-around items-center  w-[80%] sm:w-[60%] md:w-[35%]">
+                <div className="flex flex-col justify-around items-center  w-[80%] sm:w-[60%] md:w-[35%] pt-10 md:pt-0">
                     <div className="flex flex-col items-center text-xl md:text-4xl font-semibold">
                         <h2>Core Skills</h2>
                         <div className="rounded border-2 border-violet-600 mt-4 md:mb-2 w-[40%]"/>

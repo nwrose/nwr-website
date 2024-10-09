@@ -118,17 +118,14 @@ body {
 .typewriter {
   color: #00FF00;
   font-family: 'Press Start 2P', monospace;
-  font-size: large;
   font-weight: 100;
   text-shadow: 0 0 10px #00FF00; 
 
   position: absolute;
-  left: 20px;
   top: 5%;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 8px solid white; /* The typwriter cursor */
+  border-right: 8px solid #00FF00; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .05em; /* Adjust as needed */
   animation: 
     typing 2.25s steps(21) 1.5s backwards,
     backspace 2.25s steps(21) 5.25s forwards,
@@ -138,17 +135,14 @@ body {
 .typewriter-2 {
   color: #00FF00;
   font-family: 'Press Start 2P', monospace;
-  font-size: large;
   font-weight: 100;
   text-shadow: 0 0 10px #00FF00; 
 
   position: absolute;
-  left: 20px;
   top: 5%;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 8px solid white; /* The typwriter cursor */
+  border-right: 8px solid #00FF00; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .05em; /* Adjust as needed */
   animation: 
     typing 2.25s steps(21) 8.25s backwards,
     backspace 2.25s steps(21) 12s forwards,
@@ -157,78 +151,66 @@ body {
 .typewriter-3 {
   color: #00FF00;
   font-family: 'Press Start 2P', monospace;
-  font-size: large;
   font-weight: 100;
   text-shadow: 0 0 10px #00FF00; 
 
   position: absolute;
-  left: 20px;
   top: 5%;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 8px solid white; /* The typwriter cursor */
+  border-right: 8px solid #00FF00; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .05em; /* Adjust as needed */
   animation: 
-    typing 2.25s steps(21) 15s backwards,
-    backspace 2.25s steps(21) 23.25s forwards, 
+    typing 2.25s steps(22) 15s backwards,
+    backspace 2.25s steps(22) 23.25s forwards, 
     blink-caret .75s step-end 3 both 15s,
     blink-caret-2 .75s step-end 4 both 23.25s;
 }
 .typewriter-4 {
   color: #00FF00;
   font-family: 'Press Start 2P', monospace;
-  font-size: large;
   font-weight: 100;
   text-shadow: 0 0 10px #00FF00; 
 
   position: absolute;
-  left: 20px;
   top: 25%;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 8px solid #00FF00; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .05em; /* Adjust as needed */
   animation: 
-    typing 2.25s steps(22) 17.25s backwards,
-    backspace 2.25s steps(22) 21s forwards,
+    typing 2.25s steps(23) 17.25s backwards,
+    backspace 2.25s steps(23) 21s forwards,
     blink-caret .75s step-end 8 both 17.25s;
 }
 .typewriter-5 {
   color: #00FF00;
   font-family: 'Press Start 2P', monospace;
-  font-size: large;
   font-weight: 100;
   text-shadow: 0 0 10px #00FF00; 
 
   position: absolute;
-  left: 20px;
   top: 5%;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 8px solid #00FF00; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .05em; /* Adjust as needed */
   animation: 
-    typing 2.25s steps(22) 26.25s backwards,
-    backspace 2.25s steps(22) 30s forwards,
+    typing 2.25s steps(23) 26.25s backwards,
+    backspace 2.25s steps(23) 30s forwards,
     blink-caret .75s step-end 9 both 26.25s;
 }
 .typewriter-6 {
   color: #00FF00;
   font-family: 'Press Start 2P', monospace;
-  font-size: large;
   font-weight: 100;
   text-shadow: 0 0 10px #00FF00; 
 
   position: absolute;
-  left: 20px;
   top: 5%;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 8px solid #00FF00; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .05em; /* Adjust as needed */
   animation: 
-    typing 2.25s steps(22) 33.75s backwards,
-    backspace 2.25s steps(22) 37.5s forwards,
+    typing 2.25s steps(23) 33.75s backwards,
+    backspace 2.25s steps(23) 37.5s forwards,
     blink-caret .75s step-end infinite both 33.75s;
 }
 
@@ -236,16 +218,45 @@ body {
   border-style: outset;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0px }
-  to { width: 425px }
+@media (min-width: 400px){
+  .typewriter, .typewriter-2, .typewriter-3, .typewriter-4, .typewriter-5, .typewriter-6 {
+    left: 20px;
+    letter-spacing: .05em;
+  }
 }
 
-@keyframes backspace {
-  from {width: 425px}
-  to {width: 0}
+@media (max-width: 399px){
+  .typewriter, .typewriter-2, .typewriter-3, .typewriter-4, .typewriter-5, .typewriter-6 {
+    left: 5px;
+    letter-spacing: 0em;
+  }
 }
+
+/* The typing effect */
+@media(max-width: 640px){
+  @keyframes typing {
+    from { width: 0px }
+    to { width: 270px }
+  }
+  @keyframes backspace {
+    from {width: 270px }
+    to {width: 0px }
+  }
+}
+
+/* Fix size of typing effect for small screens */
+@media (min-width: 641px){
+  @keyframes typing {
+    from { width: 0px }
+    to { width: 425px }
+  }
+  @keyframes backspace {
+    from {width: 425px }
+    to {width: 0px }
+  }
+}
+
+
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {

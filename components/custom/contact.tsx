@@ -1,7 +1,7 @@
 const Contact:React.FC = () => {
     return(
     <>
-    <div className="relative">
+    <div className="relative py-16 sm:py-4">
         <div className="h-[100px] w-[100%] flex justify-center md:justify-start items-end space-x-10 text-sm z-20">
             <div><a href="https://www.github.com/nwrose/"  className="hover:bg-violetMode m-2 p-2 rounded ease-in-out duration-300">
                 GitHub
@@ -13,7 +13,7 @@ const Contact:React.FC = () => {
                 Email
             </a></div>
         </div>
-        <div className="flex items-center justify-center text-xs w-[100%] py-2 z-20">
+        <div className="flex items-center justify-center text-xs w-[100%] py-4 z-20">
             <p>© 2024 Nathan Rosenberg. All rights reserved.</p>
         </div>
         <div className="bg-gradient-to-b from-secondary to-violet-800 opacity-20 h-[100px] w-[100%] absolute bottom-0 z-10 pointer-events-none">

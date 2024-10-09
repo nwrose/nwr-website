@@ -34,8 +34,8 @@ export default function Frontpage() {
     }, [reloadKey]);
 
     return(
-        <div className='h-screen w-[100%] fontsize-20 text-4xl flex bg-secondary'>
-            <div className="max-w-[5%] w-[5%] h-[100%] flex flex-col justify-around items-center -z-10 md:z-10">
+        <div className='sm:h-screen w-full fontsize-20 text-4xl flex bg-secondary'>
+            <div className="max-w-[5%] w-0 sm:w-[5%] h-[100%] flex flex-col justify-around items-center -z-10 md:z-10 ">
                 <div className="space-y-1 shadow-md rounded cursor-hover-pixel bg-gray-100">
                     <div/>
                     <div className='hover:bg-violet-300 rounded m-2'>
@@ -52,14 +52,14 @@ export default function Frontpage() {
                     <div/>
                 </div>
             </div>
-            <div className='h-screen w-[90%] flex items-center flex-col justify-between p-4 '>
-                <div className='flex flex-col h-[80%] justify-around items-center w-full md:w-[60%] p-5 mb-4'>
-                    <div className='flex text-4xl md:text-6xl text-primary font-bold'>
+            <div className='h-[30vh] sm:h-screen w-[100%] sm:w-[90%] flex flex-col items-center justify-between pt-16 sm:pt-4 md:pt-8'>
+                <div className='flex flex-col h-[80%] justify-around items-center w-[100%] md:w-[60%] py-5 mb-4'>
+                    <div className='flex text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary font-bold pb-2'>
                         <p className=''> Hello, World!</p>
                         <span className="wave">👋</span>
                     </div>
-                    <div key={reloadKey} className='relative w-[80%] min-w-[475px] h-[50%] bg-green-950 cursor-pixel border-t-4 border-l-4 border-b-4 border-r-4 border-gray-500 border-t-gray-300 border-l-gray-300 border-b-gray-600 border-r-gray-600 shadow-md'>
-                        <button id="refresh-button" className="absolute right-1 bottom-1 lg:top-1 lg:bottom-auto text-2xl p-1 rounded cursor-hover-pixel" onClick={handleRefresh}>🔄</button>
+                    <div key={reloadKey} className='relative text-xs min-h-[100px] sm:text-lg w-[95vw] sm:w-[475px] md:w-[600px] h-[50%] bg-green-950 cursor-pixel border-4 border-gray-500 border-t-gray-300 border-l-gray-300 border-b-gray-600 border-r-gray-600 shadow-md'>
+                        <button id="refresh-button" className="absolute right-1 bottom-1 lg:top-1 lg:bottom-auto text-lg sm:text-2xl p-1 rounded cursor-hover-pixel" onClick={handleRefresh}>🔄</button>
                         <p className='typewriter'> I&#39;m Nathan Rosenberg.</p>
                         <p className='typewriter-2'>Full-Stack Developer.</p>
                         <p className='typewriter-3'>Recent Graduate of the</p>
