@@ -59,8 +59,8 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		cursor: {
-			pixel: 'url("/cursor-pixel.png"), auto', 
-			'hover-pixel': 'url("/cursor-hover-pixel.png"), pointer'
+			pixel: 'url("/pngs/cursor-pixel.png"), auto', 
+			'hover-pixel': 'url("/pngs/cursor-hover-pixel.png"), pointer'
 		}
   	}
   },

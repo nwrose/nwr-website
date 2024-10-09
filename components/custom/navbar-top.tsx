@@ -2,13 +2,9 @@
 
 import {
     NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
     navigationMenuTriggerStyle
 } from "@/components/ui/navigation-menu"
 import {Separator} from "@/components/ui/separator"
@@ -43,9 +39,9 @@ export default function Navbar() {
                 <NavigationMenuList className="flex flex-row justify-center sm:justify-between w-screen">
                     <div className="hidden sm:block">
                         <NavigationMenuItem className="text-violet-800">
-                            <Link href="/" legacyBehavior passHref>
+                            <Link href="/#home" legacyBehavior passHref>
                                 <NavigationMenuLink className="flex items-center">
-                                    <Image alt="" src="/headshot.jpg" height={40} width={40} className="m-2 rounded-full"/>
+                                    <Image alt="" src="/jpgs/ashleys-pic-zoom.jpg" height={200} width={200} className="m-2 rounded-full h-12 w-12"/>
                                     <p className="max-w-0 md:max-w-full">NATHAN ROSENBERG</p>
                                 </NavigationMenuLink>
                             </Link>
@@ -53,28 +49,28 @@ export default function Navbar() {
                     </div>
                     <div className="flex min-w-[30%] justify-between m-2">
                         <NavigationMenuItem>
-                            <Link href="#home" legacyBehavior passHref>
+                            <Link href="/#home" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Home
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <Link href="#about" legacyBehavior passHref>
+                            <Link href="/#about" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 About
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <Link href="#experience" legacyBehavior passHref>
+                            <Link href="/#experience" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Projects
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <Link href="#contact" legacyBehavior passHref>
+                            <Link href="/#contact" legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Contact
                                 </NavigationMenuLink>

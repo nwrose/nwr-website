@@ -2,8 +2,7 @@ const Contact:React.FC = () => {
     return(
     <>
     <div className="relative">
-        <div className="h-[100px] w-[100%] flex justify-start items-end space-x-10 text-sm z-20">
-            <div></div>
+        <div className="h-[100px] w-[100%] flex justify-center md:justify-start items-end space-x-10 text-sm z-20">
             <div><a href="https://www.github.com/nwrose/"  className="hover:bg-violetMode m-2 p-2 rounded ease-in-out duration-300">
                 GitHub
             </a></div>

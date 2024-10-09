@@ -1,6 +1,3 @@
-import { Separator } from "@radix-ui/react-separator"
-
-
 export default function About(){
     return(
         <>
@@ -15,15 +12,15 @@ export default function About(){
                     </div>
                     <div className="px-4 pt-8 space-y-4">
                         <p className="">
-                            Hi, I'm Nathan Rosenberg, software-engineer and recent graduate of 
-                            the University of Michigan with a B.S. in Computer Science. I'm 
+                            Hi, I&#39;m Nathan Rosenberg, software-engineer and recent graduate of 
+                            the University of Michigan with a B.S. in Computer Science. I&#39;m 
                             passionate about technology, and enjoy allowing my curiosity to 
                             pull me in exciting new directions. 
                         </p>
                         <p className="">
-                            I've done a mix of back-end and front-end work, primarily focusing on 
+                            I&#39;ve done a mix of back-end and front-end work, primarily focusing on 
                             React JS & TS for front-end, and Python Flask, SQL (RDBMS), and AWS for 
-                            backend. Additionally, I've done a lot of classroom project work with C/C++
+                            backend. Additionally, I&#39;ve done a lot of classroom project work with C/C++
                             and am comfortable in a multi-threaded environment, having designed and built
                             a few fundamental operating system components.
                         </p>    

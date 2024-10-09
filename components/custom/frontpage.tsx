@@ -60,7 +60,7 @@ export default function Frontpage() {
                     </div>
                     <div key={reloadKey} className='relative w-[80%] min-w-[475px] h-[50%] bg-green-950 cursor-pixel border-t-4 border-l-4 border-b-4 border-r-4 border-gray-500 border-t-gray-300 border-l-gray-300 border-b-gray-600 border-r-gray-600 shadow-md'>
                         <button id="refresh-button" className="absolute right-1 bottom-1 lg:top-1 lg:bottom-auto text-2xl p-1 rounded cursor-hover-pixel" onClick={handleRefresh}>🔄</button>
-                        <p className='typewriter'> I'm Nathan Rosenberg.</p>
+                        <p className='typewriter'> I&#39;m Nathan Rosenberg.</p>
                         <p className='typewriter-2'>Full-Stack Developer.</p>
                         <p className='typewriter-3'>Recent Graduate of the</p>
                         <p className='typewriter-4'>University of Michigan.</p>
