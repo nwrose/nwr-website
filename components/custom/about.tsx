@@ -15,7 +15,7 @@ export default function About(){
                     </div>
                     <div className="px-4 pt-8 space-y-4">
                         <p className="">
-                            Hi, I'm Nate Rosenberg, software-engineer and recent graduate of 
+                            Hi, I'm Nathan Rosenberg, software-engineer and recent graduate of 
                             the University of Michigan with a B.S. in Computer Science. I'm 
                             passionate about technology, and enjoy allowing my curiosity to 
                             pull me in exciting new directions. 
@@ -33,7 +33,7 @@ export default function About(){
                             ETL data pipelines and cloud infastructure, expanding my back-end 
                             development capabilities.
                         </p>
-                        <p>
+                        <p className="hidden">
                             Something more personal and like good closing maybe? idk ill get some feedback
                             for this last paragraph
                         </p>
