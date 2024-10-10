@@ -7,6 +7,10 @@
   --foreground: #171717;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -127,8 +131,8 @@ body {
   border-right: 8px solid #00FF00; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: 
-    typing 2.25s steps(21) 1.5s backwards,
-    backspace 2.25s steps(21) 5.25s forwards,
+    typing 2.25s steps(23) 1.5s backwards,
+    backspace 2.25s steps(23) 5.25s forwards,
     blink-caret .75s step-end 11 both;
 }
 
@@ -144,8 +148,8 @@ body {
   border-right: 8px solid #00FF00; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: 
-    typing 2.25s steps(21) 8.25s backwards,
-    backspace 2.25s steps(21) 12s forwards,
+    typing 2.25s steps(23) 8.25s backwards,
+    backspace 2.25s steps(23) 12s forwards,
     blink-caret .75s step-end 9 both 8.25s;
 }
 .typewriter-3 {
@@ -248,10 +252,10 @@ body {
 @media (min-width: 641px){
   @keyframes typing {
     from { width: 0px }
-    to { width: 425px }
+    to { width: 430px }
   }
   @keyframes backspace {
-    from {width: 425px }
+    from {width: 430px }
     to {width: 0px }
   }
 }
@@ -268,4 +272,9 @@ body {
 @keyframes blink-caret-2 {
   from, to { border-color: transparent }
   50% { border-color: #00FF00; }
+}
+
+
+#home, #about, #experience, #contact{
+  scroll-behavior: smooth;
 }

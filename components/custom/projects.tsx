@@ -12,12 +12,13 @@ const Projects: React.FC = () => {
             </div>
             <div className="flex flex-col md:flex-row md:flex-wrap items-center md:items-start justify-center w-[90%]">
                 <div className="w-[80vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] min-h-80 m-5 md:m-10 ">
-                    <a href="/" className="flex flex-col justify-start items-center transition-transform ease-in-out duration-300 transform hover:scale-105 shadow-lg dark:shadow-sm dark:shadow-violet-600">
+                    <a href="/" className="flex flex-col justify-start items-center transition-transform ease-in-out duration-300 transform hover:scale-105 shadow-2xl dark:shadow-sm dark:shadow-violet-600">
                         <div className="flex items-center justify-center m-2 border-b-2">
-                            <Image alt="Personal Website" src="/pngs/nwr-website-10-8-24.png" width={900} height={900}/>
+                            <Image alt="Personal Website" src="/pngs/nwr-website-sc-dark.png" width={900} height={900} className="dark:hidden"/>
+                            <Image alt="Personal Website" src="/pngs/nwr-website-sc.png" width={900} height={900} className="hidden dark:block"/>
                         </div>
                         <div className="flex justify-center w-[100%] text-xl sm:text-2xl font-semibold py-4 ">
-                            nathan-rosenberg.dev
+                            nate-rosenberg.com
                         </div>
                         <div className="w-[90%] mb-4 text-base sm:text-lg">
                             <p>

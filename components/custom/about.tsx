@@ -12,7 +12,7 @@ export default function About(){
                     </div>
                     <div className="px-4 pt-8 space-y-4">
                         <p className="">
-                            Hi, I&#39;m Nathan Rosenberg, software-engineer and recent graduate of 
+                            I&#39;m a software-engineer and recent graduate of 
                             the University of Michigan with a B.S. in Computer Science. I&#39;m 
                             passionate about technology, and enjoy allowing my curiosity to 
                             pull me in exciting new directions. 
@@ -32,13 +32,14 @@ export default function About(){
                         </p>
                         <p className="hidden">
                             Something more personal and like good closing maybe? idk ill get some feedback
-                            for this last paragraph
+                            for this last paragraph...    
+                            --I enjoy finding creative solutions to challenging problems ... yada yada yada--                    
                         </p>
                     </div>
                 </div>
                 <div className="flex flex-col justify-around items-center  w-[80%] sm:w-[60%] md:w-[35%] pt-10 md:pt-0">
                     <div className="flex flex-col items-center text-xl md:text-4xl font-semibold">
-                        <h2>Core Skills</h2>
+                        <h2>Skills</h2>
                         <div className="rounded border-2 border-violet-600 mt-4 md:mb-2 w-[40%]"/>
                     </div>
                     <div className="flex flex-wrap h-[80%] font-semibold text-sm md:text-lg justify-center space-y-2 md:space-y-4 space-x-2 md:space-x-4 py-4">
