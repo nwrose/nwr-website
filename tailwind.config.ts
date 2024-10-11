@@ -61,7 +61,10 @@ const config: Config = {
 		cursor: {
 			pixel: 'url("/pngs/cursor-pixel.png"), auto', 
 			'hover-pixel': 'url("/pngs/cursor-hover-pixel.png"), pointer'
-		}
+		}, 
+		backgroundImage: {
+			'grid-pattern': 'linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px)',
+		},
   	}
   },
   plugins: [require("tailwindcss-animate")],

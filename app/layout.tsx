@@ -5,6 +5,8 @@ import Navbar from "@/components/custom/navbar-top";
 import AI from "@/components/custom/ai-helper";
 import { Inter } from 'next/font/google'; // Importing the font using Next.js font optimization
 import "./globals.css";
+import React from "react";
+
 
 const inter = Inter({ subsets: ['latin'] }); // Use the imported font
 
@@ -38,7 +40,7 @@ export default function RootLayout({
             rel="stylesheet"
           />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} font-sans bg-secondary text-primary`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} bg-grid bg-fixed bg-center font-sans bg-secondary text-primary`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar/>
           <div className='w-[5%] h-[10%] absolute pb-4 bottom-0 right-0 z-10'>
