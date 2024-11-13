@@ -12,7 +12,7 @@ export default function About(){
                     </div>
                     <div className="px-4 pt-8 space-y-4">
                         <p className="">
-                            I&#39;m a software-engineer and recent graduate of 
+                            I&#39;m a Software Engineer and recent graduate of 
                             the University of Michigan with a B.S. in Computer Science. I&#39;m 
                             passionate about technology, and enjoy allowing my curiosity to 
                             pull me in exciting new directions. 
@@ -20,7 +20,7 @@ export default function About(){
                         <p className="">
                             I&#39;ve done a mix of back-end and front-end work, primarily focusing on 
                             React JS & TS for front-end, and Python Flask, SQL (RDBMS), and AWS for 
-                            backend. Additionally, I&#39;ve done a lot of classroom project work with C/C++
+                            back-end. Additionally, I&#39;ve done a lot of classroom project work with C/C++
                             and am comfortable in a multi-threaded environment, having designed and built
                             a few fundamental operating system components.
                         </p>    
