@@ -41,7 +41,7 @@ export default function RootLayout({
           />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} bg-grid bg-fixed bg-center font-sans bg-secondary text-primary`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Navbar/>
           <div className='w-[5%] h-[10%] absolute pb-4 bottom-0 right-0 z-10'>
             <AI/>

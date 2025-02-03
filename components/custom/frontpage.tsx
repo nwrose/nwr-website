@@ -1,12 +1,15 @@
 import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
 import { Separator } from '@radix-ui/react-separator';
+import { motion } from "framer-motion";
 
 const REFRESH_TIME = 43000 // refresh after 45s since last refresh
 
 
 export default function Frontpage() {
     const [reloadKey, setReloadKey] = useState(0);
+    const [waveKey, setWaveKey] = useState(0);
+    const [waving, setWaving] = useState(false);
     const intervalRef = useRef<number | null>(null);
 
     const startInterval = () => {
@@ -20,8 +23,19 @@ export default function Frontpage() {
     }
 
     const handleRefresh = () => {
-        setReloadKey(reloadKey+1);
+        setReloadKey(prev => prev + 1);
         startInterval();
+    }
+
+    const playWave = async () => {
+        if(waving) return;
+        setWaving(true);
+        
+        // Start wave animation and then wait 1.5s until it can be replayed
+        setWaveKey(prev => prev + 1);
+        await new Promise(resolve => setTimeout(resolve, 1500));
+
+        setWaving(false);
     }
 
     useEffect(() => {
@@ -56,19 +70,31 @@ export default function Frontpage() {
             </div>
             <div className='h-[30vh] sm:h-screen w-[100%] sm:w-[90%] flex flex-col items-center justify-between pt-24 sm:pt-4 md:pt-8 z-40'>
                 <div className='flex flex-col h-[80%] justify-around items-center w-[100%] md:w-[60%] py-5 mb-4'>
-                    <div className='flex text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary font-bold pb-2'>
-                        <p className=''> Hello, World!</p>
-                        <span className="wave">👋</span>
+                    <div className='flex text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary font-bold pb-2 scroll-in'>
+                        <motion.p className='' initial={{ opacity: 0, y: -20, scale: 0.95 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 1, ease: "easeOut" }}>
+                            <span className='text-shadow-subtleViolet sm:text-shadow-violet'>
+                                Hello 
+                            </span>
+                            <span className="wave " key={waveKey} onMouseEnter={playWave}>
+                                👋
+                            </span>
+                            <span className='text-shadow-subtleViolet sm:text-shadow-violet'>, World!</span>
+                        </motion.p>
                     </div>
-                    <div key={reloadKey} className='relative text-xs min-h-[100px] sm:text-lg w-[95vw] sm:w-[475px] md:w-[600px] h-[50%] bg-green-950 cursor-pixel border-4 border-gray-500 border-t-gray-300 border-l-gray-300 border-b-gray-600 border-r-gray-600 shadow-md'>
-                        <button id="refresh-button" className="absolute right-1 bottom-1 lg:top-1 lg:bottom-auto text-lg sm:text-2xl p-1 rounded cursor-hover-pixel" onClick={handleRefresh}>🔄</button>
-                        <p className='typewriter'>  Hi, I&#39;m Nate Rosenberg.</p>
-                        <p className='typewriter-2'>Full-Stack Developer :D</p>
-                        <p className='typewriter-3'>Recent Graduate of the</p>
-                        <p className='typewriter-4'>University of Michigan.</p>
-                        <p className='typewriter-5'>Lover of Vintage Stuff.</p>
-                        <p className='typewriter-6'>Scroll for More Info :)</p>
-                    </div>
+                    <motion.div 
+                        className='relative text-xs min-h-[100px] sm:text-lg w-[95vw] sm:w-[475px] md:w-[600px] h-[50%] bg-green-950 cursor-pixel border-4 border-gray-500 border-t-gray-300 border-l-gray-300 border-b-gray-600 border-r-gray-600 dark:shadow-sm dark:shadow-violet-600'
+                        initial={{ opacity: 0, y: 0, scale: 0.85 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 0.5, ease: "easeOut" }}
+                    >
+                        <div key={reloadKey}>
+                            <button id="refresh-button" className="absolute right-1 bottom-0 lg:top-0 lg:bottom-auto text-lg sm:text-2xl p-1 rounded cursor-hover-pixel typewriter-refresh hover:font-extrabold" onClick={handleRefresh}>↻</button>
+                            <p className='typewriter typewriter-1'>Hi, I&#39;m Nate Rosenberg.</p>
+                            <p className='typewriter typewriter-2'>Full-Stack Developer :D</p>
+                            <p className='typewriter typewriter-3'>Recent Graduate of the</p>
+                            <p className='typewriter typewriter-4'>University of Michigan.</p>
+                            <p className='typewriter typewriter-5'>Lover of Vintage Stuff.</p>
+                            <p className='typewriter typewriter-6'>Scroll for More Info :)</p>
+                        </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
