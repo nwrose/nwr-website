@@ -38,7 +38,11 @@ export default function RootLayout({
         <link
             href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
             rel="stylesheet"
-          />
+        />
+        <link 
+          rel="icon"
+          href="/favicon.ico"
+        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} bg-grid bg-fixed bg-center font-sans bg-secondary text-primary`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
