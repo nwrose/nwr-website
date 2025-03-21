@@ -136,6 +136,10 @@ body {
   white-space: nowrap; /* Keeps the content on a single line */
 }
 
+.hello-world {
+  font-family: 'Press Start 2P', monospace;
+}
+
 .typewriter-refresh {
   color: #00FF00;
   font-family: 'Press Start 2P', monospace;

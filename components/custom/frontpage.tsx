@@ -8,8 +8,6 @@ const REFRESH_TIME = 43000 // refresh after 45s since last refresh
 
 export default function Frontpage() {
     const [reloadKey, setReloadKey] = useState(0);
-    const [waveKey, setWaveKey] = useState(0);
-    const [waving, setWaving] = useState(false);
     const intervalRef = useRef<number | null>(null);
 
     const startInterval = () => {
@@ -25,17 +23,6 @@ export default function Frontpage() {
     const handleRefresh = () => {
         setReloadKey(prev => prev + 1);
         startInterval();
-    }
-
-    const playWave = async () => {
-        if(waving) return;
-        setWaving(true);
-        
-        // Start wave animation and then wait 1.5s until it can be replayed
-        setWaveKey(prev => prev + 1);
-        await new Promise(resolve => setTimeout(resolve, 1500));
-
-        setWaving(false);
     }
 
     useEffect(() => {
@@ -73,12 +60,8 @@ export default function Frontpage() {
                     <div className='flex text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary font-bold pb-2 scroll-in'>
                         <motion.p className='' initial={{ opacity: 0, y: -20, scale: 0.95 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 1, ease: "easeOut" }}>
                             <span className='text-shadow-subtleViolet sm:text-shadow-violet'>
-                                Hello 
+                                Hello, World!
                             </span>
-                            <span className="wave " key={waveKey} onMouseEnter={playWave}>
-                                👋
-                            </span>
-                            <span className='text-shadow-subtleViolet sm:text-shadow-violet'>, World!</span>
                         </motion.p>
                     </div>
                     <motion.div 
